@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/ikkowy/vue-icons#readme",
   "dependencies": {
-    "@ikkowy/icons": "^0.0.1"
+    "@ikkowy/icons": "^0.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
