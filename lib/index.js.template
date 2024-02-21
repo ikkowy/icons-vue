@@ -1,0 +1,11 @@
+import IwyIcon from "./components/IwyIcon.vue";
+
+$[IMPORTS];
+
+export default {
+  install: (app, options) => {
+    app.component("IwyIcon", IwyIcon);
+
+$[INSTALLS];
+  }
+};
