@@ -4,7 +4,7 @@
   "files": [
     "dist"
   ],
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Vue.js integration for my custom icon pack",
   "main": "./dist/icons-vue.umd.cjs",
   "module": "./dist/icons-vue.js",
