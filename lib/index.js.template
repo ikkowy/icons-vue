@@ -1,3 +1,5 @@
+import IconIndex from "../node_modules/@ikkowy/icons/icons.json";
+
 import IwyIcon from "./components/IwyIcon.vue";
 
 $[IMPORTS];
@@ -7,5 +9,7 @@ export default {
     app.component("IwyIcon", IwyIcon);
 
 $[INSTALLS];
-  }
+  },
 };
+
+export { IconIndex };

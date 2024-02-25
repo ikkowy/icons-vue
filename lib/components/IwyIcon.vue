@@ -1,4 +1,8 @@
 <script setup>
+  import { IconIndex } from "../index.js";
+
+  import { computed } from "vue";
+
   const props = defineProps({
     name: String,
     look: {
@@ -17,10 +21,16 @@
       default: "black"
     }
   });
+
+  const _is = computed(() => {
+    const name = (props.name in IconIndex) ? props.name : "unknown";
+    const look = IconIndex[name].look.includes(props.look) ? props.look : IconIndex[name].look[0];
+    return `iwy-icon-${name}-${look}-svg`;
+  });
 </script>
 
 <template>
-  <component :fill="props.fill" :height="size" :is="`iwy-icon-${props.name}-${props.look}-svg`" />
+  <component :fill="props.fill" :height="size" :is="_is" />
 </template>
 
 <style scoped>
